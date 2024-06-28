@@ -174,65 +174,14 @@ The cleaned data should meet the following criteria and constraints:
 
 ## DAX Measures
 
-dax_code:
-  - name: failed_missions_count
-    description: Count of missions that ended in failure
-    code: |
-      FailedMissions = 
-      CALCULATE(
-          COUNT('Space Mission'[Mission]),
-          'Space Mission'[MissionStatus] = "Failure"
-      )
-
-  - name: partial_failure_count
-    description: Count of missions that had partial failures
-    code: |
-      PartialFailure = 
-      CALCULATE(
-          COUNT('Space Mission'[Mission]),
-          'Space Mission'[MissionStatus] = "Partial Failure"
-      )
-
-  - name: prelaunch_failure_count
-    description: Count of missions that failed before launch
-    code: |
-      PrelaunchFailure = 
-      CALCULATE(
-          COUNT('Space Mission'[Mission]),
-          'Space Mission'[MissionStatus] = "Prelaunch Failure"
-      )
-
-  - name: success_rate
-    description: Calculate the success rate of space missions
-    code: |
-      SuccessRate = 
-      DIVIDE(
-          CALCULATE(
-              COUNT('Space Mission'[Mission]),
-              'Space Mission'[MissionStatus] = "Success"
-          ),
-          COUNT('Space Mission'[Mission])
-      )
-
-  - name: successful_missions_count
-    description: Count of successful missions
-    code: |
-      SuccessfulMissions = 
-      CALCULATE(
-          COUNT('Space Mission'[Mission]),
-          'Space Mission'[MissionStatus] = "Success"
-      )
-
-  - name: total_missions_count
-    description: Total number of space missions
-    code: |
-      TotalMissions = COUNT('Space Mission'[Mission])
-
-  - name: total_price_sum
-    description: Sum of the prices of rockets used in missions
-    code: |
-      TotalPrice = SUM('Space Mission'[Price])
-
+### 1. Failed Missions Count
+```sql
+FailedMissions = 
+CALCULATE(
+    COUNT('Space Mission'[Mission]),
+    'Space Mission'[MissionStatus] = "Failure"
+)
+```
 
 
 
