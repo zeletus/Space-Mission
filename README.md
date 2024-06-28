@@ -248,9 +248,9 @@ Here are the key questions we need to answer-
 
 
 ### 1. How have rocket launches trended across time? Has mission success rate increased?
--There is a noticeable increase in rocket launches starting around the 2000s, with significant growth in recent years.
--The overall success rate is high at 94.62%.
--Failures and partial failures are relatively low.
+- There is a noticeable increase in rocket launches starting around the 2000s, with significant growth in recent years.
+- The overall success rate is high at 94.62%.
+- Failures and partial failures are relatively low.
 
 ### 2. Which countries have had the most successful space missions? Has it always been that way?
 Two countries dominated successful space missions throughout most for recent decades 
@@ -259,11 +259,11 @@ Two countries dominated successful space missions throughout most for recent dec
 However, in recent decades, other countries have had increasing success in space exploration:
 
 ### 3. Which rocket has been used for the most space missions? Is it still active?
--The Falcon 9 Block 5 is the most frequently used rocket, and it is still active.
+- The Falcon 9 Block 5 is the most frequently used rocket, and it is still active.
 
 
 ### 4. Are there any patterns you can notice with the launch locations?
--There is a noticeable increase in rocket launches starting around the 2000s, with significant growth in recent years.
+- There is a noticeable increase in rocket launches starting around the 2000s, with significant growth in recent years.
  In recent decades, other countries have had increasing success in space exploration:
 
 
