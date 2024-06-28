@@ -131,9 +131,108 @@ The data is sourced Maven Analytics (an Excel extract), [see here to find it.](h
 # Tools
 | Tool | Purpose |
 | --- | --- |
-| SQL Server | Cleaning, testing, and analyzing the data |
 | Power BI | Visualizing the data via interactive dashboards |
 | GitHub | Hosting the project documentation and version control |
+
+
+# Development
+
+## Pseudocode
+- What's the general approach in creating this solution from start to finish?
+
+1. Get the data
+2. Explore the data in Microsoft Power BI
+3. Load the data into Microsoft Power BI
+4. Clean the data with Microsoft Power BI
+6. Visualize the data in Power BI
+7. Generate the findings based on the insights
+8. Write the documentation + commentary
+9. Publish the data to GitHub Pages
+
+## Data exploration notes
+
+This is the stage where you have a scan of what's in the data, errors, inconcsistencies, bugs, weird and corrupted characters etc  
+
+
+- What are your initial observations with this dataset? What's caught your attention so far? 
+
+1. There are at least 9 columns that contain the data we need for this analysis, which signals we have everything we need from the file without needing to contact the client for any more data. 
+2. Some of the cells had null values 
+3. All columns were needed for the Data analysis
+
+## Data cleaning 
+- What do we expect the clean data to look like? (What should it contain? What contraints should we apply to it?)
+
+The aim is to refine our dataset to ensure it is structured and ready for analysis. 
+
+The cleaned data should meet the following criteria and constraints:
+
+- Only relevant columns should be retained.
+- All data types should be appropriate for the contents of each column.
+- There were some null cell which was considered during the analysis
+- Datatype was checked to ensure Fields correlate with records.
+
+## DAX Measures
+
+dax_code:
+  - name: failed_missions_count
+    description: Count of missions that ended in failure
+    code: |
+      FailedMissions = 
+      CALCULATE(
+          COUNT('Space Mission'[Mission]),
+          'Space Mission'[MissionStatus] = "Failure"
+      )
+
+  - name: partial_failure_count
+    description: Count of missions that had partial failures
+    code: |
+      PartialFailure = 
+      CALCULATE(
+          COUNT('Space Mission'[Mission]),
+          'Space Mission'[MissionStatus] = "Partial Failure"
+      )
+
+  - name: prelaunch_failure_count
+    description: Count of missions that failed before launch
+    code: |
+      PrelaunchFailure = 
+      CALCULATE(
+          COUNT('Space Mission'[Mission]),
+          'Space Mission'[MissionStatus] = "Prelaunch Failure"
+      )
+
+  - name: success_rate
+    description: Calculate the success rate of space missions
+    code: |
+      SuccessRate = 
+      DIVIDE(
+          CALCULATE(
+              COUNT('Space Mission'[Mission]),
+              'Space Mission'[MissionStatus] = "Success"
+          ),
+          COUNT('Space Mission'[Mission])
+      )
+
+  - name: successful_missions_count
+    description: Count of successful missions
+    code: |
+      SuccessfulMissions = 
+      CALCULATE(
+          COUNT('Space Mission'[Mission]),
+          'Space Mission'[MissionStatus] = "Success"
+      )
+
+  - name: total_missions_count
+    description: Total number of space missions
+    code: |
+      TotalMissions = COUNT('Space Mission'[Mission])
+
+  - name: total_price_sum
+    description: Sum of the prices of rockets used in missions
+    code: |
+      TotalPrice = SUM('Space Mission'[Price])
+
 
 
 
