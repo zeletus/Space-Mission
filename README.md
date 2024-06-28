@@ -183,6 +183,69 @@ CALCULATE(
 )
 ```
 
+### 2. Partial Failure Count
+```sql
+PartialFailure = 
+CALCULATE(
+    COUNT('Space Mission'[Mission]),
+    'Space Mission'[MissionStatus] = "Partial Failure"
+)
+
+```
+
+### 3. Prelaunch Failure Count
+```sql
+PrelaunchFailure = 
+CALCULATE(
+    COUNT('Space Mission'[Mission]),
+    'Space Mission'[MissionStatus] = "Prelaunch Failure"
+)
+```
+
+### 4. Success Rate
+```sql
+SuccessRate = 
+DIVIDE(
+    CALCULATE(
+        COUNT('Space Mission'[Mission]),
+        'Space Mission'[MissionStatus] = "Success"
+    ),
+    COUNT('Space Mission'[Mission])
+)
+```
+
+### 5. Successful Missions Count
+```sql
+SuccessfulMissions = 
+CALCULATE(
+    COUNT('Space Mission'[Mission]),
+    'Space Mission'[MissionStatus] = "Success"
+)
+```
+
+### 6. Total Missions Count
+```sql
+TotalMissions = COUNT('Space Mission'[Mission])
+```
+
+### 7. Total Price Sum
+```sql
+TotalPrice = SUM('Space Mission'[Price])
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
