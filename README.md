@@ -4,7 +4,7 @@
 #![excel-to-powerbi-animated-diagram](assets/images/kaggle_to_powerbi.gif)
 
 # Table of contents 
-
+-[Description](#description)
 - [Objective](#objective)
 - [Data Source](#data-source)
 - [Stages](#stages)
@@ -34,6 +34,18 @@
 All space missions from 1957 to August 2022, including details on the location, date,
 and result of the launch, the company responsible, and the name, price, and status
 of the rocket used for the mission.
+##description: 
+      Field                 Description
+      ------------------------------------------------------
+      Company              Company responsible for the space mission
+      Location             Location of the launch
+      Date                 Date of the launch
+      Time                 Time of the launch (UTC)
+      Rocket               Name of the rocket used for the mission
+      Mission              Name of the space mission (or missions)
+      RocketStatus         Status of the rocket as of August 2022 (Active or Inactive)
+      Price                Cost of the rocket in millions of US dollars
+      MissionStatus        Status of the mission (Success, Failure, Partial Failure, Prelaunch Failure)
 
 # Objective 
 
@@ -106,7 +118,20 @@ The data is sourced Maven Analytics (an Excel extract), [see here to find it.](h
 - Analysis
 
 # Design 
+##Dashboardrequirements
+  - objective: >
+      To create a Power BI dashboard that visualizes historical space mission data, enabling stakeholders to interactively explore trends and patterns in rocket launches, mission success rates, and launch locations.
+1.  Shows the number of rocket launches per year.
+2.  Displays the distribution of mission outcomes (Success, Failure, Partial Failure, Prelaunch Failure).
+3.  Shows the number of successful missions by country.
 
+
+# Tools
+| Tool | Purpose |
+| --- | --- |
+| SQL Server | Cleaning, testing, and analyzing the data |
+| Power BI | Visualizing the data via interactive dashboards |
+| GitHub | Hosting the project documentation and version control |
 
 
 
