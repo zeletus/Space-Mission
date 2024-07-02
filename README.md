@@ -130,10 +130,13 @@ The data is sourced Maven Analytics (an Excel extract), [see here to find it.](h
 
 
 # Tools
-| Tool | Purpose |
-| --- | --- |
-| Power BI | Visualizing the data via interactive dashboards |
-| GitHub | Hosting the project documentation and version control |
+## Tools and Their Purposes
+
+| Tool    | Purpose                                                 |
+|---------|---------------------------------------------------------|
+| Power BI| Visualizing the data via interactive dashboards         |
+| GitHub  | Hosting the project documentation and version control   |
+
 
 
 # Development
