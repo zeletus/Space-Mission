@@ -1,6 +1,5 @@
 # Space Mission
 
-![excel-to-powerbi-animated-diagram]((https://tenor.com/view/rocket-launch-moonfall-lift-off-blast-off-take-off-gif-24451488))
 
 ## Table of Contents 
 - [Description](#description)
@@ -18,8 +17,6 @@
   - [DAX Measures](#dax-measures)
 - [Analysis](#analysis)
   - [Findings](#findings)
-- [Recommendations](#recommendations)
-  - [Potential Courses of Actions](#potential-courses-of-actions)
 - [Conclusion](#conclusion)
 
 ## Description
