@@ -256,7 +256,8 @@ Here are the key questions we need to answer-
 - Two countries dominated successful space missions throughout most recent decades:
 1. United States
 2. Russia
-However, in recent decades, other countries have had increasing success in space exploration.
+   
+ However, in recent decades, other countries have had increasing success in space exploration.
 
 ### 3. Which rocket has been used for the most space missions? Is it still active?
 - The Falcon 9 Block 5 is the most frequently used rocket, having been used 111 times, and it is still active.
