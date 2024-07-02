@@ -1,6 +1,6 @@
 # Space Mission
 
-![excel-to-powerbi-animated-diagram](assets/images/kaggle_to_powerbi.gif)
+![excel-to-powerbi-animated-diagram]((https://tenor.com/view/rocket-launch-moonfall-lift-off-blast-off-take-off-gif-24451488))
 
 ## Table of Contents 
 - [Description](#description)
