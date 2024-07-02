@@ -37,10 +37,10 @@ of the rocket used for the mission.
 
 ## Column Description:
 ## Column Description:
-| Field         | Description          |
-|---------------|----------------------|
-| Company       | Company responsible  |
-| Location      | Launch location      |
+| Field    | Description         |
+|----------|---------------------|
+| Company  | Company responsible |
+| Location | Launch location     |
 
 
 # Objective 
