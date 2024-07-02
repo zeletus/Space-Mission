@@ -237,6 +237,14 @@ TotalMissions = COUNT('Space Mission'[Mission])
 TotalPrice = SUM('Space Mission'[Price])
 ```
 
+# Visualization 
+## Results
+
+- What does the dashboard look like?
+
+![GIF of Power BI Dashboard](assets/images/top_uk_youtubers_2024.gif)
+
+
 # Recommended Analysis
 ## Findings
 For this analysis, we're going to focus on the questions below -
